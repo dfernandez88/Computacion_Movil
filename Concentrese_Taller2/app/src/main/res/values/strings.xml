@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Concentrese_DaRi</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">Selecciona una accion</string>
+</resources>
