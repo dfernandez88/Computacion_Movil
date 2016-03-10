@@ -27,6 +27,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.darilaptop.concentrese_dari.Concentrese_DaRi" />
         </activity>
+        <activity
+            android:name=".players"
+            android:label="@string/title_activity_players"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".level"
+            android:label="@string/title_activity_level"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".gameeasy"
+            android:label="@string/title_activity_gameeasy"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".playerone"
+            android:label="@string/title_activity_playerone"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

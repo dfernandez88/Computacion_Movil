@@ -1,5 +1,6 @@
 package com.example.darilaptop.concentrese_dari;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -49,4 +50,10 @@ public class Concentrese_DaRi extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public void OpenActivity(View view) {
+        Intent iniciar = new Intent(this,playerone.class);
+        startActivity(iniciar);
+    }
+
 }
