@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DaTi Chat</string>
+    <string name="Nombre">Nombre</string>
+    <string name="Usuario">Usuario</string>
+    <string name="Agregar">Agregar</string>
+    <string name="Enviar">Enviar</string>
+</resources>
