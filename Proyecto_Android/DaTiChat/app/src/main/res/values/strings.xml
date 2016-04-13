@@ -4,4 +4,6 @@
     <string name="Usuario">Usuario</string>
     <string name="Agregar">Agregar</string>
     <string name="Enviar">Enviar</string>
+    <string name="Compartir">Compartir</string>
+    <string name="Registro">Registrarse</string>
 </resources>

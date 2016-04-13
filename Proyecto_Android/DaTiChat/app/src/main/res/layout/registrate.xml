@@ -13,7 +13,8 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical|center">
+        android:gravity="center_vertical|center"
+        android:id="@+id/linearLayout2">
 
         <TextView
             android:layout_width="wrap_content"
@@ -46,5 +47,12 @@
             android:layout_gravity="center_horizontal"
             android:inputType="text" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Registro"
+            android:id="@+id/button3" />
+
     </LinearLayout>
+
 </RelativeLayout>
