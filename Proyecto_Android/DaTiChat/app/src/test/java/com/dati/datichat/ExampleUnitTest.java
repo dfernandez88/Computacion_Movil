@@ -1,4 +1,4 @@
-package com.example.dati.datichat;
+package com.dati.datichat;
 
 import org.junit.Test;
 

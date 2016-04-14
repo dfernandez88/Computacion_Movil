@@ -1,9 +1,33 @@
 <resources>
     <string name="app_name">DaTi Chat</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_registro">Registrate</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <!-- -->
     <string name="Nombre">Nombre</string>
     <string name="Usuario">Usuario</string>
     <string name="Agregar">Agregar</string>
     <string name="Enviar">Enviar</string>
-    <string name="Compartir">Compartir</string>
     <string name="Registro">Registrarse</string>
+    <string name="Bienvenido">Bienvenido a DaTi Chat</string>
+    <string name="Continuar">Continuar</string>
+    <string name="Archivos">Archivos</string>
+    <string name="Compartir">Compartir</string>
+    <string name="Ordenar">Ordenar por:</string>
+    <string name="Fecha">Fecha</string>
+    <string name="Foto">Foto</string>
+    <string name="Archivo">Archivo</string>
+    <string name="Sincronizar">Sincronizar</string>
 </resources>

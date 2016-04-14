@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.dati.datichat.Mensajes">
+    <item
+        android:id="@+id/archivos"
+        android:onClick="Archivos"
+        android:title="@string/Archivos"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/sinc"
+        android:icon="@drawable/autorenew"
+        app:showAsAction="ifRoom"
+        />
+</menu>

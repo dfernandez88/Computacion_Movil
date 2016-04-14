@@ -1,4 +1,4 @@
-package com.example.dati.datichat;
+package com.dati.datichat;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
