@@ -20,7 +20,7 @@
             android:layout_margin="10dp"
             android:layout_marginBottom="10dp"
             android:gravity="center"
-            android:textColor="@color/mensaje2"
+            android:textColor="@color/blanco"
             android:background="@drawable/chat_b"
             android:text="New Text" />
     </LinearLayout>

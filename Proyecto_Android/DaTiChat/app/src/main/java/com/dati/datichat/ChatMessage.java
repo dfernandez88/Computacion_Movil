@@ -2,7 +2,6 @@ package com.dati.datichat;
 
 public class ChatMessage {
 
-
     public boolean left;
     public String message;
 
