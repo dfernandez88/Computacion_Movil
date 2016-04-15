@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#DF7401</color>
     <color name="colorAccent">#FF4081</color>
 
+    <color name="boton_inicio">#FFD700</color>
     <color name="mensaje1">#38610B</color>
     <color name="mensaje2">#0B4C5F</color>
     <color name="blanco">#FFFFFF</color>

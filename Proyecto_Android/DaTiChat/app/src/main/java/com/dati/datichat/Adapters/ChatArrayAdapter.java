@@ -1,4 +1,4 @@
-package com.dati.datichat;
+package com.dati.datichat.Adapters;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -11,6 +11,8 @@ import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.dati.datichat.R;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,6 +21,7 @@ public class ChatArrayAdapter extends ArrayAdapter<ChatMessage> {
     private TextView chatText;
     private List<ChatMessage> MessageList = new ArrayList<ChatMessage>();
     private LinearLayout layout;
+    private ChatUser user;
 
 
     public ChatArrayAdapter(Context context, int textViewResourceId) {
@@ -55,11 +58,9 @@ public class ChatArrayAdapter extends ArrayAdapter<ChatMessage> {
         layout = (LinearLayout)v.findViewById(R.id.message1);
         ChatMessage messageobj = getItem(position);
         chatText =(TextView)v.findViewById(R.id.single_message);
-        chatText.setText(messageobj.message);
+        chatText.setText(messageobj.getText());
 
-        chatText.setBackgroundResource(messageobj.left ? R.drawable.chat_a :R.drawable.chat_b);
-
-        layout.setGravity(messageobj.left ? Gravity.START : Gravity.END);
+        chatText.setBackgroundResource(messageobj.getFrom().equals(this.user.getUserId()) ? R.drawable.chat_a :R.drawable.chat_b);
 
         return v;
 

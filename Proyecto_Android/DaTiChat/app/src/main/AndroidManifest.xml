@@ -9,7 +9,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/whatsapp"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -23,12 +23,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Mensajes" />
-        <activity android:name=".Contactos" />
         <activity
-            android:name=".Registro"
-            android:label="@string/title_activity_registro" />
-        <activity android:name=".Archivos"></activity>
+            android:name=".Mensajes"
+            android:label="@string/Mensajes" />
+        <activity
+            android:name=".Contactos"
+            android:label="@string/Contactos" />
+        <activity
+            android:name=".Archivos"
+            android:label="@string/Archivos" />
+        <activity
+            android:name=".AgregarContacto"
+            android:label="@string/AgregarC" />
+        <activity android:name=".Registro"></activity>
     </application>
 
 </manifest>

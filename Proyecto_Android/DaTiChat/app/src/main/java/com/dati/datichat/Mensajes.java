@@ -15,6 +15,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 
+import com.dati.datichat.Adapters.ChatArrayAdapter;
+import com.dati.datichat.Adapters.ChatMessage;
+
 public class Mensajes extends AppCompatActivity {
 
     private ChatArrayAdapter adp;
@@ -57,7 +60,7 @@ public class Mensajes extends AppCompatActivity {
         });
     }
     private boolean sendChatMessage(){
-        adp.add(new ChatMessage(side, chatText.getText().toString()));
+        adp.add(new ChatMessage());
         chatText.setText("");
         side = !side;
         return true;

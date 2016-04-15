@@ -46,8 +46,4 @@ public class Archivos extends AppCompatActivity {
         this.arch.add("Hola6");
     }
 
-    public void onItemClick(AdapterView<?> parent, View view, int position, long id){
-        String eleccion = (String)adp.getItem(position);
-        Toast.makeText(this,eleccion,Toast.LENGTH_SHORT).show();
-    }
 }
