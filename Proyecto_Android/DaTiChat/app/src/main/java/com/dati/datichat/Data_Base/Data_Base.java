@@ -51,11 +51,11 @@ public class Data_Base extends SQLiteOpenHelper{
                 Usuario.ID, Usuario.USER_NAME,
                 Usuario.NAME));
         db.execSQL(String.format("CREATE TABLE %s (%s INTEGER PRIMARY KEY AUTOINCREMENT," +
-                            "%s INTEGER %s, %s INTEGER %s, %s TEXT)",
+                            "%s INTEGER %s, %s INTEGER %s, %s TEXT, %s DATE)",
                 Tablas.MESSAGE,
                 Mensaje.ID, Mensaje.USER_FROM,
                 Referencias.ID_USUARIO, Mensaje.USER_TO,
-                Referencias.ID_USUARIO, Mensaje.MESSAGE_TEXT));
+                Referencias.ID_USUARIO, Mensaje.MESSAGE_TEXT, Mensaje.DATE));
         db.execSQL(String.format("CREATE TABLE %s (%s INTEGER PRIMARY KEY AUTOINCREMENT," +
                             "%s BYTE, %s STRING, %s STRING, %s INTEGER %s, " +
                             "%s INTEGER %s, %s DATE)",

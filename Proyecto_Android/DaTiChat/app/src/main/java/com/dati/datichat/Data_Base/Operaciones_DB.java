@@ -44,7 +44,7 @@ public class Operaciones_DB {
     }
     public ArrayList<String> BuscarMensajes(String from, String to){
         String query = "Select * FROM " + Tablas.MESSAGE + " WHERE " + Mensaje.USER_FROM + " = ?" +
-                Mensaje.USER_TO + "= ?";
+                Mensaje.USER_TO + "= ? Order by DATE DESC";
         SQLiteDatabase db = data_base.getWritableDatabase();
         Cursor cursor = db.rawQuery(query,new String[]{from,to});
         ArrayList<String> queryResult = new ArrayList<>();

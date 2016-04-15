@@ -17,6 +17,7 @@ public class FormaDB {
         String USER_FROM = "user_from";
         String USER_TO = "user_to";
         String MESSAGE_TEXT = "message_text";
+        String DATE = "date";
     }
 
     interface ColumnasArchivo{

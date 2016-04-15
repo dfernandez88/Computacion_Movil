@@ -1,6 +1,7 @@
 package com.dati.datichat;
 
 import android.annotation.TargetApi;
+import android.content.Context;
 import android.content.Intent;
 import android.database.DataSetObserver;
 import android.os.Build;
@@ -17,6 +18,13 @@ import android.widget.ListView;
 
 import com.dati.datichat.Adapters.ChatArrayAdapter;
 import com.dati.datichat.Adapters.ChatMessage;
+import com.dati.datichat.Adapters.ChatUser;
+import com.dati.datichat.Data_Base.Data_Base;
+import com.dati.datichat.Data_Base.Operaciones_DB;
+
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 
 public class Mensajes extends AppCompatActivity {
 
@@ -24,6 +32,11 @@ public class Mensajes extends AppCompatActivity {
     private ListView list;
     private EditText chatText;
     private Button send;
+    private Operaciones_DB db;
+    private ChatUser user;
+    private Integer from;
+    private Integer to;
+
 
     Intent intent;
     private boolean side = false;
@@ -35,14 +48,15 @@ public class Mensajes extends AppCompatActivity {
 
         list = (ListView) findViewById(R.id.chat_lista);
 
-        adp = new ChatArrayAdapter(getApplicationContext(), R.layout.mensaje);
+        adp = new ChatArrayAdapter(getApplicationContext(), R.layout.mensaje,from,to,user);
         list.setAdapter(adp);
 
         chatText = (EditText) findViewById(R.id.chat_text);
         chatText.setOnKeyListener(new View.OnKeyListener() {
             public boolean onKey(View v, int keyCode, KeyEvent event) {
                 if ((event.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER)) {
-                    return sendChatMessage();
+                    String texto = chatText.getText().toString();
+                    return sendChatMessage(texto);
                 }
                 return false;
             }
@@ -59,8 +73,17 @@ public class Mensajes extends AppCompatActivity {
             }
         });
     }
-    private boolean sendChatMessage(){
-        adp.add(new ChatMessage());
+    private boolean sendChatMessage(String texto){
+        ChatMessage message = new ChatMessage();
+        message.setText(texto);
+        final Calendar calendar = Calendar.getInstance();
+        calendar.setTimeInMillis(System.currentTimeMillis());
+        Date date = calendar.getTime();
+        message.setDate(date.toString());
+        message.setTo(to);
+        message.setFrom(from);
+        db.addMessage(message);
+        adp.add(message.getText());
         chatText.setText("");
         side = !side;
         return true;
@@ -71,7 +94,9 @@ public class Mensajes extends AppCompatActivity {
         send.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                sendChatMessage();
+                chatText = (EditText) findViewById(R.id.chat_text);
+                String texto = chatText.getText().toString();
+                sendChatMessage(texto);
             }
         });
     }

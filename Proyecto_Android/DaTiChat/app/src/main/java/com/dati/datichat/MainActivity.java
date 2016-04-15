@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Continuar(View view){
-        Intent intent = new Intent(this,Mensajes.class);
+        Intent intent = new Intent(this,Contactos.class);
         startActivityForResult(intent,1);
     }
 }
