@@ -8,4 +8,5 @@
     <color name="mensaje1">#38610B</color>
     <color name="mensaje2">#0B4C5F</color>
     <color name="blanco">#FFFFFF</color>
+    <color name="negro">#000000</color>
 </resources>

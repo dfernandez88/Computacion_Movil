@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/contacto1"
+        android:gravity="left"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="73dp"
+                android:layout_height="82dp"
+                android:id="@+id/imagen_contacto"
+                android:background="@drawable/account"
+                android:contentDescription="@string/Contactos"
+                android:layout_marginBottom="54dp" />
+
+            <TextView
+                android:id="@+id/contacto_solo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textColor="@color/negro"
+                android:text="New Text"
+                android:layout_centerVertical="true"
+                android:layout_weight="0.21" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

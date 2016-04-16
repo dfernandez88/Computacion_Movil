@@ -45,18 +45,18 @@ public class Data_Base extends SQLiteOpenHelper{
     }
     @Override
     public void onCreate(SQLiteDatabase db){
-        db.execSQL(String.format("CREATE TABLE %s (%s INTEGER PRIMARY KEY AUTOINCREMENT," +
+        db.execSQL(String.format("CREATE TABLE %s (%s INTEGER PRIMARY KEY," +
                             "%s STRING NOT NULL, %s STRING NOT NULL)",
                 Tablas.USER,
                 Usuario.ID, Usuario.USER_NAME,
                 Usuario.NAME));
-        db.execSQL(String.format("CREATE TABLE %s (%s INTEGER PRIMARY KEY AUTOINCREMENT," +
+        db.execSQL(String.format("CREATE TABLE %s (%s INTEGER PRIMARY KEY," +
                             "%s INTEGER %s, %s INTEGER %s, %s TEXT, %s DATE)",
                 Tablas.MESSAGE,
                 Mensaje.ID, Mensaje.USER_FROM,
                 Referencias.ID_USUARIO, Mensaje.USER_TO,
                 Referencias.ID_USUARIO, Mensaje.MESSAGE_TEXT, Mensaje.DATE));
-        db.execSQL(String.format("CREATE TABLE %s (%s INTEGER PRIMARY KEY AUTOINCREMENT," +
+        db.execSQL(String.format("CREATE TABLE %s (%s INTEGER PRIMARY KEY," +
                             "%s BYTE, %s STRING, %s STRING, %s INTEGER %s, " +
                             "%s INTEGER %s, %s DATE)",
                 Tablas.SHARED_FILE,

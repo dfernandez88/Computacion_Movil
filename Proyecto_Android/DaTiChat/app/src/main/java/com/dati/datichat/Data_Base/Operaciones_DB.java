@@ -69,6 +69,21 @@ public class Operaciones_DB {
         db.insertOrThrow(Tablas.USER, null,valores);
         db.close();
     }
+    public ChatUser userP() {
+        String query = "Select * FROM " + Tablas.USER + " WHERE " + Usuario.ID + " = 1";
+        SQLiteDatabase db = data_base.getWritableDatabase();
+        Cursor cursor = db.rawQuery(query, new String[]{});
+        ChatUser usuario = new ChatUser();
+        if (cursor.moveToFirst()) {
+            usuario.setUserId(Integer.valueOf(cursor.getString(0)));
+            usuario.setUserName(cursor.getString(1));
+            usuario.setNombre(cursor.getString(2));
+            cursor.close();
+        }
+        db.close();
+        return usuario;
+    }
+
     public ArrayList<String> findUsers(){
         String query = "Select NAME FROM "+ Tablas.USER;
         SQLiteDatabase db = data_base.getWritableDatabase();
