@@ -19,12 +19,35 @@ namespace DatiChat
  
     public partial class Mensajes : Window
     {
+        private int v1;
+        private int v2;
+        private int v3;
+        private string v4;
+        private int v5;
+
         public Mensajes()
         {
             InitializeComponent();
 
-            List<Mensajes> Contacts = RestClient.GetMessageList(1, 2);
-            
+            List<Mensajes> Contacts = new List<Mensajes>();
+
+            Contacts.Add(new Mensajes(1, 1, 2, "Hola Como Estas",12/28/1995));
+            Contacts.Add(new Mensajes(1, 1, 2, "Hola Como Estas", 12 / 28 / 1995));
+            Contacts.Add(new Mensajes(1, 1, 2, "Hola Como Estas", 12 / 28 / 1995));
+            Contacts.Add(new Mensajes(1, 1, 2, "Hola Como Estas", 12 / 28 / 1995));
+
+
+            /*RestClient.GetMessageList(1, 2);*/
+
+        }
+
+        public Mensajes(int v1, int v2, int v3, string v4, int v5)
+        {
+            this.v1 = v1;
+            this.v2 = v2;
+            this.v3 = v3;
+            this.v4 = v4;
+            this.v5 = v5;
         }
 
         private Directorio _directorio { get; set; }
