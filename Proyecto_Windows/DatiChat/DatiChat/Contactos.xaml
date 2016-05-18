@@ -10,8 +10,14 @@
         <ListView Margin="10" Name="Usuarios">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Nombre" Width="200" DisplayMemberBinding="{Binding Name}"/>
-                    <GridViewColumn Header="Usuario" Width="200" DisplayMemberBinding="{Binding User_name}" />
+                    <GridViewColumn Header="Nombre" Width="210" DisplayMemberBinding="{Binding Name}"/>
+                    <GridViewColumn Header="Mensajes" Width="200" >
+                    <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button>Ver Mensajes</Button>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
                 </GridView>
             </ListView.View>
         </ListView>

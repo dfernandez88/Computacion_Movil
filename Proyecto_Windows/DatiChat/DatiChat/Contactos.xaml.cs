@@ -32,6 +32,7 @@ namespace DatiChat
             Contacts.Add(new Contacto(3, "john@doe-family.com3", "John Doe3"));
             */
             Usuarios.ItemsSource = Contacts;
+
         }
     }
 }

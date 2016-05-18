@@ -9,9 +9,6 @@ C:\Users\ASUS\Documents\GitHub\Computacion_Movil\Proyecto_Windows\DatiChat\DatiC
 C:\Users\ASUS\Documents\GitHub\Computacion_Movil\Proyecto_Windows\DatiChat\DatiChat\obj\Debug\DatiChat.csproj.GenerateResource.Cache
 C:\Users\ASUS\Documents\GitHub\Computacion_Movil\Proyecto_Windows\DatiChat\DatiChat\obj\Debug\DatiChat.exe
 C:\Users\ASUS\Documents\GitHub\Computacion_Movil\Proyecto_Windows\DatiChat\DatiChat\obj\Debug\DatiChat.pdb
-C:\Users\ASUS\Documents\GitHub\Computacion_Movil\Proyecto_Windows\DatiChat\DatiChat\obj\Debug\DatiChat_Content.g.cs
-C:\Users\ASUS\Documents\GitHub\Computacion_Movil\Proyecto_Windows\DatiChat\DatiChat\bin\Debug\Database1.mdf
-C:\Users\ASUS\Documents\GitHub\Computacion_Movil\Proyecto_Windows\DatiChat\DatiChat\bin\Debug\Database1_log.ldf
 C:\Users\ASUS\Documents\GitHub\Computacion_Movil\Proyecto_Windows\DatiChat\DatiChat\bin\Debug\Microsoft.AspNet.Scaffolding.12.0.dll
 C:\Users\ASUS\Documents\GitHub\Computacion_Movil\Proyecto_Windows\DatiChat\DatiChat\bin\Debug\Microsoft.AspNet.Scaffolding.EntityFramework.12.0.dll
 C:\Users\ASUS\Documents\GitHub\Computacion_Movil\Proyecto_Windows\DatiChat\DatiChat\bin\Debug\Microsoft.Build.dll
@@ -30,3 +27,5 @@ C:\Users\ASUS\Documents\GitHub\Computacion_Movil\Proyecto_Windows\DatiChat\DatiC
 C:\Users\ASUS\Documents\GitHub\Computacion_Movil\Proyecto_Windows\DatiChat\DatiChat\bin\Debug\DatiChat.exe.config
 C:\Users\ASUS\Documents\GitHub\Computacion_Movil\Proyecto_Windows\DatiChat\DatiChat\bin\Debug\Newtonsoft.Json.dll
 C:\Users\ASUS\Documents\GitHub\Computacion_Movil\Proyecto_Windows\DatiChat\DatiChat\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ASUS\Documents\GitHub\Computacion_Movil\Proyecto_Windows\DatiChat\DatiChat\obj\Debug\Mensajes.g.cs
+C:\Users\ASUS\Documents\GitHub\Computacion_Movil\Proyecto_Windows\DatiChat\DatiChat\obj\Debug\Mensajes.baml

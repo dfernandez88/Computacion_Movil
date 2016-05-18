@@ -21,7 +21,6 @@ namespace DatiChat.Rest
             if (response.IsSuccessStatusCode)
             {
                 var contacts = response.Content.ReadAsAsync<List<Contacto>>().Result;
-                MessageBox.Show(contacts.First().ToString());
                 return contacts;
             }
             else
@@ -52,6 +51,7 @@ namespace DatiChat.Rest
             }
         }
 
+        /*
         public static List<Archivo> GetFilesList(int user_from, int user_to)
         {
             string url = "http://192.168.1.64:8191/";
@@ -93,7 +93,7 @@ namespace DatiChat.Rest
                 return failed;
             }
         }
-
+        */
     }
     
 }

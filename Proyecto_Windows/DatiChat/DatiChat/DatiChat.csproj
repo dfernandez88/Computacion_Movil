@@ -89,9 +89,13 @@
     </ApplicationDefinition>
     <Compile Include="Clases\Archivo.cs" />
     <Compile Include="Clases\Contacto.cs" />
+    <Compile Include="Clases\Directorio.cs" />
     <Compile Include="Clases\Mensajes.cs" />
     <Compile Include="Contactos.xaml.cs">
       <DependentUpon>Contactos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Mensajes.xaml.cs">
+      <DependentUpon>Mensajes.xaml</DependentUpon>
     </Compile>
     <Compile Include="Rest\RestClient.cs" />
     <Page Include="Contactos.xaml">
@@ -102,6 +106,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Mensajes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -128,15 +136,6 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Database1.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Database1_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Database1.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
