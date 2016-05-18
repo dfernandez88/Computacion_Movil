@@ -1,0 +1,5 @@
+C:\Users\ASUS\Documents\GitHub\Computacion_Movil\Proyecto_Windows\WebApiWindowsPhone\PortableClassLibrary\bin\Debug\PortableClassLibrary.dll
+C:\Users\ASUS\Documents\GitHub\Computacion_Movil\Proyecto_Windows\WebApiWindowsPhone\PortableClassLibrary\bin\Debug\PortableClassLibrary.pdb
+C:\Users\ASUS\Documents\GitHub\Computacion_Movil\Proyecto_Windows\WebApiWindowsPhone\PortableClassLibrary\obj\Debug\PortableClassLibrary.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Documents\GitHub\Computacion_Movil\Proyecto_Windows\WebApiWindowsPhone\PortableClassLibrary\obj\Debug\PortableClassLibrary.dll
+C:\Users\ASUS\Documents\GitHub\Computacion_Movil\Proyecto_Windows\WebApiWindowsPhone\PortableClassLibrary\obj\Debug\PortableClassLibrary.pdb
