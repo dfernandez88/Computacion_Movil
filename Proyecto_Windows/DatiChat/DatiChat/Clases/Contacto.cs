@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,42 +9,30 @@ namespace DatiChat.Clases
 {
     public class Contacto
     {
-        private int _user_id;
+       
 
-        public int User_id
-        {
-            get { return _user_id; }
-            set { _user_id = value; }
-        }
+        [JsonProperty("userId")]
+        public int User_id { get; set; }
 
-        private string _user_name;
+        [JsonProperty("userName")]
+        public string User_name { get; set; }
 
-        public string User_name
-        {
-            get { return _user_name; }
-            set { _user_name = value; } 
-        }
+        [JsonProperty("nombre")]
+        public string Name { get; set; }
 
-        private string _name;
-
-        public string Name
-        {
-            get { return _name; }
-            set { _name = value; }
-        }
 
         public Contacto()
         {
-            _user_id = 0;
-            _user_name = "";
-            _name = "";
+            User_id = 0;
+            User_name = "";
+            Name = "";
         }
 
         public Contacto(int id, string user, string name)
         {
-            _user_id = id;
-            _user_name = user;
-            _name = name;
+            User_id = id;
+            User_name = user;
+            Name = name;
         }
 
     }
