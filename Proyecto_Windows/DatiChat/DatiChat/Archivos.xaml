@@ -37,7 +37,7 @@
         </Style>
     </Window.Resources>
     <Grid>
-        <ListView  Margin="10,10,10,123" Name="Archivos_usuarios" Background="Transparent" ItemContainerStyle="{DynamicResource ItemStyle}" Foreground="White" BorderBrush="{x:Null}">
+        <ListView  Margin="10,10,10,123" Name="Archivos_usuarios" Background="Transparent" ItemContainerStyle="{DynamicResource ItemStyle}" Foreground="White" BorderBrush="{x:Null}" MouseDoubleClick="Archivos_usuarios_MouseDoubleClick">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Archivos" Width="420" DisplayMemberBinding="{Binding name}"/>

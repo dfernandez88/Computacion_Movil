@@ -167,15 +167,14 @@ namespace DatiChat.Rest
 
         }
 
-        public static File GetFilebyId(int file_id)
+        public static byte[] GetFilebyId(int file_id)
         {
             string urlS = "http://localhost:8191/";
             var client = new RestSharp.RestClient(urlS);
             var request = new RestSharp.RestRequest("rest/files/" + file_id.ToString());
             request.Method = Method.GET;
             var arch = client.DownloadData(request);
-            string result = System.Text.Encoding.UTF8.GetString(arch);
-
+            return arch;
         }
     }
     

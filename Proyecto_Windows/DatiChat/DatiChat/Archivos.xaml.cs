@@ -3,6 +3,7 @@ using DatiChat.Rest;
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -38,6 +39,22 @@ namespace DatiChat
                 //Cambiar el id (obtenerlo del id)
                 Files = RestClient.GetFile(user_from.User_id, user_to.User_id);
                 Archivos_usuarios.ItemsSource = Files;
+
+                ///////////////////////
+                for (int i = 0; i < Files.Count; i++)
+                {
+                    Archivo value = Files[i];
+                    value.data = RestClient.GetFilebyId(value.id);
+                    string dir = "C:/Users/DaRiLaptop/Desktop/Proyecto_Windows/Descargas_DatiChat" + value.name;
+
+                    BinaryWriter Writer = null;
+                    Writer = new BinaryWriter(File.OpenWrite(dir));
+
+                    Writer.Write(value.data);
+                    Writer.Flush();
+                    Writer.Close();
+                }
+                
             }
             catch (Exception e)
             {
@@ -58,8 +75,7 @@ namespace DatiChat
                 nombresArchivos = file.SafeFileNames;
                 FilePath.AddRange(file.FileNames);
                 textBox.Text = file.SafeFileName;
-                RestClient.PostFile(user_from.User_id, user_to.User_id, file);
-                
+                RestClient.PostFile(user_from.User_id, user_to.User_id, file);                
             }
         }
 
@@ -80,6 +96,25 @@ namespace DatiChat
         {
             Files = RestClient.GetFile(user_from.User_id, user_to.User_id);
             Archivos_usuarios.ItemsSource = Files;
+            for (int i = 0; i < Files.Count; i++)
+            {
+                Archivo value = Files[i];
+                value.data = RestClient.GetFilebyId(value.id);
+                string dir = "C:/Users/DaRiLaptop/Desktop/Proyecto_Windows/Descargas_DatiChat";
+
+                BinaryWriter Writer = null;
+                Writer = new BinaryWriter(File.OpenWrite(dir));
+
+                Writer.Write(value.data);
+                Writer.Flush();
+                Writer.Close();
+            }
+        }
+
+        private void Archivos_usuarios_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            OpenFileDialog descargas = new OpenFileDialog();
+            descargas.InitialDirectory = "C:/Users/DaRiLaptop/Desktop/Proyecto_Windows/Descargas_DatiChat";
         }
     }
 }
