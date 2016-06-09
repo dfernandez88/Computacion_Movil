@@ -129,3 +129,10 @@ C:\Users\DaRiLaptop\Desktop\Proyecto_Windows\DatiChat\DatiChat\obj\Debug\Registr
 C:\Users\DaRiLaptop\Desktop\Proyecto_Windows\DatiChat\DatiChat\bin\Debug\RestSharp.xml
 C:\Users\DaRiLaptop\Desktop\Proyecto_Windows\DatiChat\DatiChat\obj\Debug\Archivos.g.cs
 C:\Users\DaRiLaptop\Desktop\Proyecto_Windows\DatiChat\DatiChat\obj\Debug\Archivos.baml
+C:\Users\DaRiLaptop\Documents\GitHub\Computacion_Movil\Proyecto_Windows\DatiChat\DatiChat\bin\Debug\RestSharp.xml
+C:\Users\DaRiLaptop\Documents\GitHub\Computacion_Movil\Proyecto_Windows\DatiChat\DatiChat\obj\Debug\Archivos.g.cs
+C:\Users\DaRiLaptop\Documents\GitHub\Computacion_Movil\Proyecto_Windows\DatiChat\DatiChat\obj\Debug\Inicio.g.cs
+C:\Users\DaRiLaptop\Documents\GitHub\Computacion_Movil\Proyecto_Windows\DatiChat\DatiChat\obj\Debug\Registro.g.cs
+C:\Users\DaRiLaptop\Documents\GitHub\Computacion_Movil\Proyecto_Windows\DatiChat\DatiChat\obj\Debug\Archivos.baml
+C:\Users\DaRiLaptop\Documents\GitHub\Computacion_Movil\Proyecto_Windows\DatiChat\DatiChat\obj\Debug\Inicio.baml
+C:\Users\DaRiLaptop\Documents\GitHub\Computacion_Movil\Proyecto_Windows\DatiChat\DatiChat\obj\Debug\Registro.baml

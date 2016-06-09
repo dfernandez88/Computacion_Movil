@@ -100,7 +100,7 @@ namespace DatiChat
             {
                 Archivo value = Files[i];
                 value.data = RestClient.GetFilebyId(value.id);
-                string dir = "C:/Users/DaRiLaptop/Desktop/Proyecto_Windows/Descargas_DatiChat";
+                string dir = "C:/Users/DaRiLaptop/Documents/GitHub/Computacion_Movil/Proyecto_Windows/Descargas_DatiChat";
 
                 BinaryWriter Writer = null;
                 Writer = new BinaryWriter(File.OpenWrite(dir));
@@ -114,7 +114,7 @@ namespace DatiChat
         private void Archivos_usuarios_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             OpenFileDialog descargas = new OpenFileDialog();
-            descargas.InitialDirectory = "C:/Users/DaRiLaptop/Desktop/Proyecto_Windows/Descargas_DatiChat";
+            descargas.InitialDirectory = "C:/Users/DaRiLaptop/Documents/GitHub/Computacion_Movil/Proyecto_Windows/Descargas_DatiChat";
         }
     }
 }
