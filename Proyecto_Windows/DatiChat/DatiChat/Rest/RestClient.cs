@@ -109,7 +109,22 @@ namespace DatiChat.Rest
                 return new List<Mensaje>();
             }
         }
-  
+        /*
+        public static List<Archivo> GetFiles(int user_form, int user_to)
+        {
+            string url = "rest/shared_files/" + user_form.ToString() + "/" + user_to.ToString();
+            var jsonString = GetService(url);
+            if (jsonString != null)
+            {
+                List<Archivo> files = JsonConvert.DeserializeObject<List<Archivo>>(jsonString.Result);
+                return files;
+            }
+            else
+            {
+                return new List<Archivo>();
+            }
+        }
+        */
         public static void PostFile(int user_from, int user_to, OpenFileDialog arr)
         {
             string urlS = "http://localhost:8191/";
